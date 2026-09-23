@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Judul Halaman -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang di MyCourse"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
 
-</FrameLayout>
+    <!-- Subjudul / Submenu -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Pilih Menu Kursus"
+        android:textSize="16sp" />
+
+    <!-- Tombol Materi OOP -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_oop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Materi OOP" />
+
+    <!-- Tombol Materi Android -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Materi Android" />
+
+</LinearLayout>
