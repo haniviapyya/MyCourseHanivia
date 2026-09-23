@@ -30,7 +30,8 @@
         android:id="@+id/btn_oop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Materi OOP" />
+        android:text="Materi OOP"
+        style="@style/CustomRoundedButton" />
 
     <!-- Tombol Materi Android -->
     <androidx.appcompat.widget.AppCompatButton
@@ -38,6 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Materi Android" />
+        android:text="Materi Android"
+        style="@style/CustomRoundedButton" />
 
 </LinearLayout>
