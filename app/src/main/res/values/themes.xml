@@ -13,5 +13,5 @@
 
     <!-- Themes that can be applied to the application or specific activities. -->
     <style name="Theme.MyCourseHanivia" parent="Base.Theme.MyCourseHanivia" />
-    <style name="Theme.MyCourseHanivia.WithActionBar." parent="Base.Theme.MyCourseHanivia.WithActionBar" />
+    <style name="Theme.MyCourseHanivia.WithActionBar" parent="Base.Theme.MyCourseHanivia.WithActionBar" />
 </resources>

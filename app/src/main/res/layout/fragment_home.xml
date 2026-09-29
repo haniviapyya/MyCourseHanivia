@@ -1,45 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="16dp"
+    android:fillViewport="true"
+    android:background="@color/background_light"
     tools:context=".HomeFragment">
 
-    <!-- Judul Halaman -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Selamat Datang di MyCourse"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp" />
-
-    <!-- Subjudul / Submenu -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Pilih Menu Kursus"
-        android:textSize="16sp" />
-
-    <!-- Tombol Materi OOP -->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_oop"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Materi OOP"
-        style="@style/CustomRoundedButton" />
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <!-- Tombol Materi Android -->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Materi Android"
-        style="@style/CustomRoundedButton" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/home_image_background"
+            android:contentDescription="Ilustrasi praktikum Android"
+            android:padding="28dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_course_illustration" />
 
-</LinearLayout>
+        <TextView
+            style="@style/CustomTextView18Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Praktikum Pemrograman Mobile"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="4dp"
+            android:text="Selamat datang di MyCourse. Aplikasi ini digunakan sebagai media informasi kelas praktikum untuk membantu mahasiswa melihat materi yang telah dipelajari dan mengetahui informasi quiz."
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Tentang Kelas"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="4dp"
+            android:text="Praktikum membahas dasar pengembangan aplikasi Android menggunakan Android Studio dan Kotlin, mulai dari pembuatan layout, Activity, Fragment, TabLayout, ViewPager2, hingga penerapan custom style pada komponen antarmuka."
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_info"
+            style="@style/CustomRoundedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Lihat Materi" />
+
+    </LinearLayout>
+</ScrollView>

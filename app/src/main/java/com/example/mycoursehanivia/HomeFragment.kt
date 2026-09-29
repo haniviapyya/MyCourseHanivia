@@ -13,29 +13,12 @@ class HomeFragment : Fragment() {
     private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        // Klik tombol OOP -> Pindah ke tab Materi (Index 1)
-        binding.btnOop.setOnClickListener {
-            (activity as? MainActivity)?.let { mainAct ->
-                mainAct.findViewById<androidx.viewpager2.widget.ViewPager2>(R.id.view_pager).currentItem = 1
-            }
-        }
-
-        // Klik tombol Android -> Pindah ke tab Materi (Index 1)
-        binding.btnAndroid.setOnClickListener {
-            (activity as? MainActivity)?.let { mainAct ->
-                mainAct.findViewById<androidx.viewpager2.widget.ViewPager2>(R.id.view_pager).currentItem = 1
-            }
-        }
     }
 
     override fun onDestroyView() {
